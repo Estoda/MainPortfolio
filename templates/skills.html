@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estoda</title>
+    <link rel="shortcut icon" href="../images/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../style/all.min.css" />
+    <link rel="stylesheet" href="../style/normalize.css" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <a class="logo" href="index.html">
+        <img src="../images/logo.png" alt="Logo" />
+      </a>
+      <nav>
+        <ul class="main-nav">
+          <li>
+            <a href="skills.html">Skills</a>
+          </li>
+          <li>
+            <a href="projects.html">Projects</a>
+          </li>
+          <li>
+            <a href="edu.html">Education</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <a href="cert.html">Certifications</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a
+              href="../documents/Ahmed_Amin_Backend_Django_NoPhoto.pdf"
+              target="_blank"
+              >My CV</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="skills">
+        {% load static %}
+        <div class="container">
+          <div class="dir left">
+            <div class="photo">
+              <img src="{% static 'images/skill.png' %}" alt="" />
+            </div>
+          </div>
+          <div class="dir right">
+            <h2 class="head">My Skills</h2>
+            <p class="Bold">I Work to Update My Skills</p>
+            <div class="skills-container">
+              {% for skill in skills %}
+              <div class="skill-card">
+                <div class="skill-header">
+                  <span>{{ skill.name }}:</span>
+                  <p class="skill-description">{{ skill.description }}</p>
+                  <div class="progress-bar">
+                    <!-- <div class="progress" style="width: {{ skill.proficiency }}%"></div> -->
+                  </div>
+                </div>
+              </div>
+              {% empty %}
+              <p>No skills listed.</p>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <div class="logo">
+          <a href="index.html"><img src="../images/logo.png" alt="" /></a>
+        </div>
+        <div class="links">
+          <a class="git" href="https://github.com/Estoda" target="_blank"
+            ><i class="fa-brands fa-github"></i
+          ></a>
+          <a
+            class="linkedin"
+            href="https://www.linkedin.com/in/ahmed-amin-b9393a26a/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
+          <a class="x" href="https://x.com/AhmedAmin82253" target="_blank"
+            ><i class="fa-brands fa-square-x-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <p>&copy: 2025 Ahmed Amin. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
