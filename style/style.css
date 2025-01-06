@@ -21,16 +21,11 @@ ul {
 
 header {
     background-color: rgb(29, 29, 29);
-    position: fixed;
     width: 100%;
-    /* -webkit-box-shadow: 0 0 10px #ddd;
-  -moz-box-shadow: 0 0 10px #ddd;
-  box-shadow: 0 0 10px #ddd; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    z-index: 100;
     top: 0;
 }
 
@@ -118,7 +113,6 @@ header ul>li>a:hover::before {
 }
 
 main {
-    margin-top: 80px;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -131,6 +125,14 @@ main>section {
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
+}
+
+@media (max-width:1000px) {
+
+    main {
+        height: 110vh;
+    }
+
 }
 
 main>section .container {
@@ -254,17 +256,6 @@ main>section .container .dir .photo img {
 }
 
 
-@media (max-width:1000px) {
-    main {
-        margin-top: 160px;
-    }
-}
-
-@media (max-width:550px) {
-    main {
-        margin-top: 350px;
-    }
-}
 
 main .skills .container .dir .photo img {
     transform: translate(2%, 13%) rotate(-45deg);
