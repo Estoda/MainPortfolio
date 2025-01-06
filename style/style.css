@@ -343,6 +343,122 @@ main .skills .skill-card p {
     color: #a2a2a2;
 }
 
+main .certifications .skills-container .skill-card {
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+}
+
+main .certifications .skills-container .skill-card img {
+    width: 100%;
+}
+
+main .Projects .skills-container .skill-card {
+    padding: 0;
+    border-radius: 0;
+    width: 100%;
+}
+
+main .Projects .skills-container .skill-card img {
+    width: 25%;
+}
+
+main .Projects a.repo {
+    background: linear-gradient(90deg, #67ffca, #0059a2);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    /* -webkit-background-clip: border-box; */
+    -webkit-text-fill-color: rgb(29, 29, 29);
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-position 0.3s ease;
+}
+
+main .Projects a.repo:hover {
+    background-position: 100% 50%;
+}
+
+main .Projects .sinfo>div {
+    padding: 20px 0;
+}
+
+main .Edu .Bold {
+    font-size: 20px;
+}
+
+main .Edu .Bold a {
+    background: linear-gradient(90deg, #67ffca, #0059a2);
+    background-size: 200% 200%;
+    background-position: 0% 50%;
+    /* -webkit-background-clip: border-box; */
+    -webkit-text-fill-color: rgb(29, 29, 29);
+    padding: 15px 20px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-position 0.3s ease;
+    margin-bottom: 20px;
+}
+
+main .Edu .Bold a:hover {
+    background-position: 100% 50%;
+}
+
+main .Projects .left img {
+    transform: scale(1.1);
+}
+
+main .contact .left img {
+    transform: scale(.9);
+}
+
+main .contact .links {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+@media(max-width: 500px) {
+    main .contact .links {
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+main .contact .links a {
+    color: white;
+    padding: 0x;
+    background-color: transparent;
+    margin: 0 20px;
+    transition: ease 0.1s;
+    border-radius: 10px;
+    height: fit-content
+}
+
+main .contact .links a.git:hover {
+    color: #9c38d7;
+}
+
+
+main .contact .links a.linkedin:hover {
+    color: #0b66c3;
+}
+
+main .contact .links a.x:hover {
+    color: #4f60f5;
+}
+
+main .contact .links i {
+    font-size: 50px;
+    transition: 0.3s;
+}
+
+main .contact .links a.mail:hover {
+    color: rgb(222, 70, 70);
+}
+
 footer {
     background-color: #191919;
     color: white;
