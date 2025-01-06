@@ -406,6 +406,14 @@ main .Edu .Bold a:hover {
     background-position: 100% 50%;
 }
 
+@media (max-width:1000px) {
+
+    main.edu,
+    main.con {
+        height: fit-content;
+    }
+}
+
 main .Projects .left img {
     transform: scale(1.1);
 }
