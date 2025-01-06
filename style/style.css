@@ -320,11 +320,14 @@ main .skills .skills-container>div>h1 {
 
 main .skills .skills-container .skill-card {
     text-align: center;
+    display: flex;
+    flex-direction: column;
     width: 200px;
     border: 1px solid #a2a2a2;
     padding: 20px 10px 10px;
     border-radius: 10px;
     margin: 10px;
+    justify-content: space-between;
 }
 
 main .skills .skill-card div {
