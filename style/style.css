@@ -145,7 +145,7 @@ main>section .container {
 }
 
 main>section .container .dir {
-    width: fit-content;
+    width: 30%;
     align-items: center;
     text-align: start;
     font-weight: bold;
@@ -154,12 +154,17 @@ main>section .container .dir {
     padding: 10px;
 }
 
+main>section .container>div.main {
+    width: 70%;
+}
+
 @media (max-width:1000px) {
     main>section .container {
         flex-direction: column;
     }
 
-    main>section .container .dir {
+    main>section .container .dir,
+    main>section .container>div.main {
         width: 100%;
     }
 }
@@ -255,16 +260,84 @@ main>section .container .dir .photo img {
     width: 100%;
 }
 
+/* 
+ubuntu
+bash script
+power shell
+Git
+GitHub
+markdown writing Skill
+
+Cpp
+C
+Java
+
+Docker
+postman
+
+
+*/
+
+main.skills {
+    height: fit-content;
+}
 
 
 main .skills .container .dir .photo img {
-    transform: translate(2%, 13%) rotate(-45deg);
+    /* transform: translate(2%, 13%); */
     border-radius: 0;
 
 }
 
 main .skills .skills-container .skill-card img {
-    width: 72px;
+    width: 100px;
+}
+
+main .skills .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+
+main .skills .skills-container>div {
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 485px;
+    justify-content: center;
+}
+
+@media (max-width: 1000px) {
+    main .skills .skills-container>div {
+        min-width: 0;
+    }
+}
+
+main .skills .skills-container>div>h1 {
+    width: 100%;
+}
+
+
+main .skills .skills-container .skill-card {
+    text-align: center;
+    width: 200px;
+    border: 1px solid #a2a2a2;
+    padding: 20px 10px 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+main .skills .skill-card div {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 0 0 5px;
+}
+
+main .skills .skill-card p {
+    font-weight: 200;
+    font-size: 16px;
+    margin: 0 0 5px;
+    color: #a2a2a2;
 }
 
 footer {

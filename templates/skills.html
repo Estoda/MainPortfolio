@@ -49,33 +49,82 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="skills">
       <section class="skills">
-        {% load static %}
         <div class="container">
           <div class="dir left">
             <div class="photo">
-              <img src="{% static 'images/skill.png' %}" alt="" />
+              <img src="../images/skill.png" alt="" />
             </div>
           </div>
-          <div class="dir right">
+          <div class="dir right main">
             <h2 class="head">My Skills</h2>
             <p class="Bold">I Work to Update My Skills</p>
             <div class="skills-container">
-              {% for skill in skills %}
-              <div class="skill-card">
-                <div class="skill-header">
-                  <span>{{ skill.name }}:</span>
-                  <p class="skill-description">{{ skill.description }}</p>
-                  <div class="progress-bar">
-                    <!-- <div class="progress" style="width: {{ skill.proficiency }}%"></div> -->
+              <div class="front">
+                <h1>Front-end</h1>
+                <div class="skill-card">
+                  <div class="sphoto">
+                    <img src="../images/html.png" alt="HTML" />
+                  </div>
+                  <div class="sinfo">
+                    <div>HTML</div>
+                    <p>HTML is a standard markup language used to create Web</p>
+                  </div>
+                </div>
+                <div class="skill-card">
+                  <div class="sphoto">
+                    <img src="../images/css.png" alt="CSS" />
+                  </div>
+                  <div class="sinfo">
+                    <div>CSS</div>
+                    <p>
+                      CSS is a style sheet language used for describing the
+                      presentation of a document written in
+                    </p>
                   </div>
                 </div>
               </div>
-              {% empty %}
-              <p>No skills listed.</p>
-              {% endfor %}
-            </div>
+              <div class="back">
+                <h1>Back-end</h1>
+                <div class="skill-card">
+                  <div class="sphoto">
+                    <img src="../images/python.png" alt="Python" />
+                  </div>
+                  <div class="sinfo">
+                    <div>Python</div>
+                    <p>
+                      Python is a high-level, interpreted programming language
+                    </p>
+                  </div>
+                </div>
+                <div class="skill-card">
+                  <div class="sphoto">
+                    <img src="../images/django.png" alt="Django" />
+                  </div>
+                  <div class="sinfo">
+                    <div>Django</div>
+                    <p>
+                      Django is a free and open-source web framework, written in
+                    </p>
+                  </div>
+                </div>
+                <div class="skill-card">
+                  <div class="sphoto">
+                    <img
+                      style="border-radius: 50%"
+                      src="../images/mysql.png"
+                      alt="MySQL"
+                    />
+                  </div>
+                  <div class="sinfo">
+                    <div>MySQL</div>
+                    <p>
+                      MySQL is an open-source relational database management
+                    </p>
+                  </div>
+                  </div>
+                </div>
           </div>
         </div>
       </section>
