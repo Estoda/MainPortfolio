@@ -50,6 +50,7 @@ header .logo:hover img {
 header nav {
     display: flex;
     flex-wrap: wrap;
+    transition: ease 0.3s;
 }
 
 header .icon {
@@ -107,6 +108,10 @@ header:hover .icon>span:nth-child(2) {
 }
 
 @media(max-width:400px) {
+    header nav {
+        width: 100%;
+    }
+
     header nav ul {
         flex-direction: column;
         width: 100%;
